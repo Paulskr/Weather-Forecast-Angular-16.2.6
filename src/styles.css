@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+/** Reset Main **/
+body:focus {
+  outline: 0;
+  border: none;
+}
+a {
+	display: block;
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+	padding: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+button {
+  border: none;
+  outline: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/** Styles Main **/
+body {
+	background: linear-gradient(to right, #8360c300, #2ebf918f), url(/assets/img/main-bg.jpeg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+p {
+  color: #222831;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}

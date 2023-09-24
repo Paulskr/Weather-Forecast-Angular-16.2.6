@@ -1,0 +1,134 @@
+.main_content {
+  .logo-main {
+    text-align: center;
+    img {
+      width: 200px;
+    }
+  }
+  .content_table {
+    .center-block {
+      width: 80%;
+      h2 {
+    	 	font-weight: 700;
+		    font-size: 19px;
+        color: #fff;
+		    text-align: center;
+      }
+    } 
+    // Table
+    .table_cities {
+      border-collapse: separate;
+      border-spacing: 0 7px;
+      table-layout: fixed;
+      a {
+        text-decoration: none;
+        color: #222831;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        &:hover {
+          color: #fff;
+        }
+      }
+      thead th {
+        cursor: pointer;
+        margin-right: 15px;
+        margin-left: 15px;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        text-align: center;
+        &.active {
+          span {
+            visibility: visible;
+          }
+        }
+        span {
+          visibility: hidden;
+        }
+      }
+
+      tbody {
+        background: rgb(255 255 255 / 70%);
+        th,
+        tr {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // Pagination
+  .pagi-pagi {
+    text-align: center;
+    .pagination {
+      margin-bottom: 0;
+      li {
+        &.active {
+          a {
+            background: #222831;
+            color: #fff;
+          }
+        }
+        &.disabled {
+          a {
+            background: #d4d4d4;
+          }
+          &:hover {
+            a {
+              background: #222831;
+            }
+          }
+        }
+        &:hover {
+          a {
+            background: #222831;
+            color: #ffffff;
+          }
+        }
+        a {
+          cursor: pointer;
+          -webkit-transition: 0.2s ease-out;
+          -moz-transition: 0.2s ease-out;
+          -o-transition: 0.2s ease-out;
+          transition: 0.2s ease-out;
+          background: #ecf0f1;
+          color: #222831;
+        }
+      }
+    }
+  }
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+
+p {
+  margin: 8px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .main_content {
+    margin-bottom: 70px;
+    .content_table {
+      .center-block {
+        width: 100%;
+      }
+      .pagi-pagi {
+        ul {
+          li {
+            font-size: 13px;
+            a {
+              margin: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
